@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="./css/favicon.ico" type="image/x-icon"/>
+  <link href="./css/helpDocument.css" rel="stylesheet">
+  <title>说客英语帮助文档</title>
+  <style>
+
+  </style>
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.2.6/vue.global.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.3.0/axios.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+  <!--  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css"/>-->
+  <!--  <script src="https://unpkg.com/element-plus"></script>-->
+</head>
+<body>
+<div id="app">
+  <div class="headerWrapper">
+    <header class="header">
+      <div class="container">
+        <img src="./image/logo.png" class="logo" alt="">
+        <h1>帮助文档（Help Documents）</h1>
+        <!--        <ul class="nav"></ul>-->
+      </div>
+    </header>
+  </div>
+  <div class="nav-bar">
+    <div class="box">
+      <input type="text"
+             @keyup.enter="enterSearch"
+             @blur="enterSearch"
+             v-model.trim="title"
+             class="input"
+             placeholder="请输入标题搜索">
+      <ul>
+        <li v-for="item in list"
+            :key="item.id"
+            :class="{'active':id===item.id}"
+            @click="getDetail(item.id)">{{ item.title }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="content">
+      <div class="title">{{detailObj.title}}</div>
+      <div class="date">{{detailObj.releaseTime}}</div>
+      <div class="html-content" v-html="detailObj.content"></div>
+    </div>
+    <div class="like-wrap" @click="updateLike" v-if="id">
+      <img v-show="likeFlag" src="./image/like-light.png" class="icon"
+           alt="">
+      <img v-show="!likeFlag" src="./image/like-grey.png" class="icon"
+           alt="">
+      <span class="text" :class="{'active':likeFlag}">有用</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  const {createApp, reactive, toRefs, onMounted} = Vue;
+
+  let baseURL='';
+  if (window.location.href.indexOf('www')>-1) {
+    baseURL='https://www.talk915.com';
+  } else if (window.location.href.indexOf('test')>-1) {
+    baseURL='https://test.talk915.com';
+  } else {
+    baseURL='http://10.204.42.157:9091';
+  }
+
+  const app = createApp({
+    setup() {
+      const state = reactive({
+        list: [],
+        likeFlag: false,
+        id: '',
+        title: '',
+        detailObj: {},
+      })
+
+      const getList = async () => {
+        try {
+          const params = {
+            currPage: 0,
+            pageSize: 9999,
+            title: state.title,
+          }
+          const {data: {resultData, resultCode}} = await axios({
+            method: 'post',
+            url: `${baseURL}/config/aboutUs/queryHelpDocuments`,
+            data: params,
+            timeout: 60000,
+            headers: {
+              'Content-Type': 'application/json;charset=UTF-8',
+              token: Cookies.get('token'),
+            },
+          });
+          if (resultCode === -1) {
+            alert('登录失效，请重新登录！')
+          }
+          state.list = resultData;
+          if (!state.id && state.list && state.list.length > 0) {
+            getDetail(state.list[0]['id']);
+          }
+        } catch (e) {
+          console.log(e, 'error');
+        }
+      }
+      const getDetail = async (id) => {
+        if (state.id === id) return;
+        try {
+          state.likeFlag = false;
+          state.id = id;
+          const {data: {resultData, resultCode}} = await axios({
+            method: 'get',
+            url: `${baseURL}/config/aboutUs/queryHelpDocumentsInfo/${state.id}`,
+            timeout: 60000,
+            headers: {
+              'Content-Type': 'application/json;charset=UTF-8',
+              token: Cookies.get('token'),
+            },
+          });
+          if (resultCode === -1) {
+            alert('登录失效，请重新登录！')
+          }
+          state.detailObj = resultData;
+          addSeeCounts();
+        } catch (e) {
+          console.log(e, 'error');
+        }
+      }
+      const enterSearch = async () => {
+        console.log('enterSearch');
+        getList();
+      }
+      const updateLike = async () => {
+        if (state.likeFlag) return;
+        try {
+          const params = {
+            id: state.id,
+            type: 1,
+          }
+          await axios({
+            method: 'post',
+            url: `${baseURL}/config/aboutUs/addHelpDocumentsCount`,
+            data: params,
+            timeout: 60000,
+            headers: {
+              'Content-Type': 'application/json;charset=UTF-8',
+              token: Cookies.get('token'),
+            },
+          });
+          state.likeFlag = true;
+        } catch (e) {
+          console.log(e, 'error');
+        }
+      }
+      const addSeeCounts = async () => {
+        try {
+          const params = {
+            id: state.id,
+            type: 0,
+          }
+          await axios({
+            method: 'post',
+            url: `${baseURL}/config/aboutUs/addHelpDocumentsCount`,
+            data: params,
+            timeout: 60000,
+            headers: {
+              'Content-Type': 'application/json;charset=UTF-8',
+              token: Cookies.get('token'),
+            },
+          });
+        } catch (e) {
+          console.log(e, 'error');
+        }
+      }
+      onMounted(() => {
+        getList();
+        setTimeout(() => {
+          window.scrollTo(0, 0)
+        }, 100)
+      })
+
+      return {
+        ...toRefs(state),
+        getDetail,
+        updateLike,
+        enterSearch
+      }
+    }
+  })
+  // app.use(ElementPlus);
+  app.mount("#app");
+</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<template>
+  <div class="protocol">
+
+    <div class="content_box">
+      <span class="head">Privacy policy</span>
+      <span class="txt fontWeight">Shenzhen Chindle Education Technology Co., Ltd. (hereinafter referred to as "Talk915", "Platform" or "we") pays great attention to protect user's personal information.
+         We may collect and use information about you when you download, open, browse, log in, and use “Talk915 Teacher Website”, software and related products and/or services. We want to show you through this
+         Privacy Policy how we collect, use, store and share this information, and how we access, update, control, and protect it. This Privacy Policy is relevant to Talk915 products and/or services you use and
+         we expect you to read it carefully, if necessary, make the choices in accordance with the guidelines of this Privacy Policy. For the technical terms covered in this Privacy Policy, we try to use concise language for your understanding.
+        </span>
+      <span class="txt fontWeight">If you do not agree with the basic business functions included in this Privacy Policy, it may affect the effect of providing the products and/or services to you. By using our products and/or services, you agree to collect, use,
+          store and share your relevant information in accordance with this Privacy Policy. When this Privacy Policy is updated, we will release the latest version on Talk915 Teacher Platform in time。
+        </span>
+      <span class="txt fontWeight">If you have any questions about this Privacy Policy or related matters, you can contact us through the customer service hotline on the home page of Talk915 Teacher website through an online customer service。</span>
+
+      <span class="head head2">Catalog</span>
+      <span class="txt fontWeight txt2">1、How we collect and use your personal information</span>
+      <span class="txt fontWeight txt2">2、How we use cookies and similar technologies</span>
+      <span class="txt fontWeight txt2">3、SDK technical services we use</span>
+      <span class="txt fontWeight txt2">4、How we store your personal information</span>
+      <span class="txt fontWeight txt2">5、How we share, transfer and disclose your personal information publicly</span>
+      <span class="txt fontWeight txt2">6、Your rights</span>
+      <span class="txt fontWeight txt2">7、Information security</span>
+      <span class="txt fontWeight txt2">8、Data storage location</span>
+      <span class="txt fontWeight txt2">9、Scope of privacy policy</span>
+      <span class="txt fontWeight txt2">10、Changes in privacy policy</span>
+      <span class="txt fontWeight txt2">11、How to contact us</span>
+
+      <span class="tit">1、 How we collect and use your personal information</span>
+      <span class="txt">In order to check your teacher qualification and provide you better service of opening, teaching classes on the platform, we will use a third party service to collect and list the information related to you.
+         If you do not provide the relevant information, you may not be able to become our teacher or enjoy our products and services, or achieve the effect provided by relevant products or services。</span>
+
+      <span class="tit">1.1 basic business functions</span>
+      <span class="txt">1).Online classes. In order to successfully complete the online class, before your class you need to check whether the network, camera and microphone functions are proper. When using these functions, you need to grand the access rights of camera and microphone to us. You can use these functions to communicate and interact with students online. In order to provide you with perfect products and exclusive services, when you use our products or services, you can also turn off the corresponding access rights at any time. If you turn off the permission, you will cancel the authorization in accordance, then we will not continue to use your personal information, nor will we be able to provide you with the functions described above corresponding to those permission. If you wish to continue to use these functions, you need to re-open the access rights. Your decision to turn off permissions does not affect the processing of personal information that was previously based on your authorization.
+If you provide the following additional information, it will help us to provide you with a better service experience and/or increase your competitiveness on the platform: <span
+            class="fontWeight">Avatar, Name, Sex, Time Zone Difference, Mobile, QQ, SKYPE, Video Recording</span>; but if you do not provide this information, it will not affect the basic functions of using the service, and additional information includes <span
+            class="fontWeight">Employee ID, Full Name, Real Name, ID/PASSPORT Number, Nationality, Telephone Number Teacher Experience, Teacher Certificate Number, Contact email, Birthday,  Graduated School, Time Zone, resume</span>
+If you do not provide these basic information, you may not be able to pass the interview and qualification. In order to pay you, you need to provide the necessary information, such as Bank account location (Country and/or City),<span
+            class="fontWeight"> Bank name, Account name, Account number, Branch bank address, Swift code, paypal</span>. Storage and camera permissions are required when you change your avatar. Location permissions are required when selecting a region。</span>
+      <span class="txt">2). Customer service. To ensure the security of your account, we may use your account information to verify your identity when providing customer service to you; when you communicate with customer service, we may check your class information/record to help you solve problems. When you communicate and consult with our customer service, we will record the history.
+If you do not provide this kind of information, you will not be able to use the Talk915 teacher account on the platform。</span>
+
+      <span class="tit">2、How do we use Cookies and similar technologies?</span>
+      <span class="txt">2.1 we or our third party partners may collect and use your information through cookies and store it as log information。</span>
+      <span class="txt">2.2 We use our own cookies to prevent fraud. We need to collect browser information, cookies information, including the pages visitors have visited. Based on the visitors' browser type or other information, we can optimize and customize our web page content to optimize the visitors' experience. In case of abnormal login, we will use image CAPTCHA page Or mouse swipe information on the screen to verify identity。</span>
+
+      <span class="tit">3、The SDK technology services we use</span>
+
+      <span class="tit">3.1 Aurora push</span>
+      <span class="txt">Aurora push: In order for teachers to receive timely lesson reminder messages, the platform will collect your (Mac address, IMEI, Android_id, IMSI) during your use of the Services.。</span>
+      <span class="txt">Aurora statistics: app application page and function, event related information, device information, network information and location information. The platform will collect your (MAC address, IMEI, Android) as you use the service_ id、IMSI）
+		Get device information: in order to facilitate the background push message。</span>
+      <span class="tit">3.2 Tencent bugly SDK</span>
+      <span class="txt">In order to improve the stability of the service, to help the platform locate and analyze the app crash information to improve the app function and stability, the platform and bugly SDK will collect and share your device information, device manufacturer, device name, operating system version, operator code, APP running status, crash, stuck, network information, and log information during the process of using the service。</span>
+
+      <span class="tit">3.3 Google SDK</span>
+      <span class="txt">Google mobile service allows you to run Google programs and services and use them when you need a Google service framework。</span>
+
+      <span class="tit">4、How we store your personal information</span>
+      <span class="txt">Your personal information will be stored for the shortest possible time necessary to achieve the necessary purposes of business functions, beyond which it will be deleted or anonymized. Personal information collected and generated by us in our operations within the territory of the People's Republic of China is, in principle, stored in China, except in the following cases；</span>
+      <span class="txt">(1) Laws and regulations clearly state</span>
+      <span class="txt">(2) Obtain your express authorization。</span>
+      <span class="txt">In these cases, we will ensure that your personal information is protected in accordance with laws and regulations and this Privacy Policy。</span>
+
+
+      <span class="tit">5、How we share, transfer and publicly disclose your personal information</span>
+      <span class="txt">5.1 Sharing</span>
+      <span class="txt">We do not share your personal information with any company, organization or individual outside the Company unless we have your express consent. Currently, we will seek your authorized consent to share personal information in the following cases--Details to be added：</span>
+      <span class="txt">5.2 publicity</span>
+      <span class="txt">We may share your personal information with others in accordance with laws and regulations or mandatory requirements of government departments. For companies, organizations and individuals sharing your personal information, we will sign strict confidentiality agreements with them, requiring them to process personal information in accordance with our requirements,
+        	this Privacy Policy and any other relevant confidentiality and security measures。</span>
+      <span class="txt">5.3 Transfer</span>
+      <span class="txt">We do not transfer your personal information to any company, organization or individual, except in the following cases：</span>
+      <span class="txt">1)Transfer with express consent: With your express consent, we will transfer your personal information to other parties；</span>
+      <span class="txt">2)In the case of merger, acquisition or bankruptcy liquidation, if the transfer of personal information is involved, we will require the new company or organization holding your personal information to continue to be bound by this privacy policy; otherwise, we will require the company or organization to seek your authorization and consent again。</span>
+      <span class="txt">5.4 Public disclosure</span>
+      <span class="txt">We will only publicly disclose your personal information if：</span>
+      <span class="txt">1)After obtaining your express consent；</span>
+      <span class="txt">2)Disclosure based on Law: we may disclose your personal information publicly under the circumstances of laws, legal procedures, litigation or mandatory requirements of government authorities。</span>
+
+      <span class="tit">6、Your rights</span>
+      <span class="txt">According to the relevant laws, regulations and standards of China, as well as the common practices of other countries and regions, we guarantee you to exercise the following rights to your personal information：</span>
+      <span class="txt">6.1 Check your personal information</span>
+      <span class="txt">You have the right to access your personal information, except for the exceptions provided by laws and regulations. If you want to exercise data access, you can view or modify account settings and information by logging into your own account</span>
+      <span class="txt">6.2 Correct your personal information</span>
+      <span class="txt">You have the right to ask us to make corrections when you find that our personal information about you is incorrect. You can make a correction request in the way listed in "access your personal information". We will reply to your request for correction within 15 days；</span>
+      <span class="txt">6.3 Delete your personal information</span>
+      <span class="txt">1)In the following circumstances, you can request us to delete personal information；</span>
+      <span class="txt">2)If we deal with personal information in violation of laws and regulations；</span>
+      <span class="txt">3)If we collect and use your personal information without your consent；</span>
+      <span class="txt">4)If our handling of personal information violates the agreement with you；</span>
+      <span class="txt">5)If you no longer use our products or services, or you cancel your account；</span>
+      <span class="txt">6)If we terminate a product or service。</span>
+      <span class="txt">You can make your request for deletion through the customer service on the home page of Talk915 teacher's website. If we decide to respond to your request for deletion, we will also notify the entity from which we obtain your personal information and request its prompt deletion, unless otherwise required by law or regulation, or if such entity is independently authorized by you. When you delete information from our service, we may not delete the corresponding information from the backup system immediately, but will delete the information when the backup is updated。</span>
+      <span class="txt">6.4 Change the scope of your authorized consent</span>
+      <span class="txt">Each basic business function needs some basic personal information to complete. For the collection and use of personal information collected for the purpose of expanding business functions, you can give or withdraw your authorization consent at any time. You can manage your authorization through the device system permission settings。</span>
+      <span class="txt">When you withdraw your consent, we will no longer process the corresponding personal information. However, your decision to withdraw your consent will not affect the previous processing of personal information based on your authorization。</span>
+      <span class="txt">6.5  The subject of personal information cancels the account</span>
+      <span class="txt">You may cancel your account by making your request for cancellation through the customer service on the home page of Talk915 teacher's website, we will stop providing you with products or services and delete your personal information at your request, unless otherwise required by laws and regulations。</span>
+
+
+      <span class="txt">6.6 Respond to your request</span>
+      <span class="txt">For security reasons, you may need to provide a written request or other way to prove your identity. We may ask you to verify your identity before processing your request. We will reply within fifteen days. If you are not satisfied, you can make a complaint through the customer service hotline or online consultation on the home page of the guest English teacher's website and we will reply to you within 15 days. We may reject requests that are unprovoked and repeated, require too much technical means (require the development of new systems or fundamentally change existing practices), pose a risk to the legitimate rights and interests of others,
+         or are highly impractical (involving information stored on backup tapes)。</span>
+
+      <span class="txt">6.7 The situation in which your request could not be responded to</span>
+      <span class="txt">We will not be able to respond to your request in the following cases：</span>
+      <span class="txt">1)Related to the personal information controller's performance of his obligations under laws and regulations；</span>
+      <span class="txt">2)Directly related to national security and national defense security；</span>
+      <span class="txt">3)Directly related to public safety, public health and major public interests；</span>
+      <span
+          class="txt">4)Directly related to criminal investigation, prosecution, trial and enforcement of sentences；</span>
+      <span class="txt">5)The controller of personal information has sufficient evidence to show that the subject of personal information has subjective malice or abuse of power；</span>
+      <span class="txt">6)In order to safeguard the personal information subject or other personal life, property significant legitimate rights and interests but it is difficult to get my consent；</span>
+      <span class="txt">7)Responding to the request of the subject of personal information will cause serious damage to the legitimate rights and interests of the subject of personal information or other individuals or organizations；</span>
+      <span class="txt">8)Involved in trade secrets。</span>
+
+      <span class="tit">7、Information security</span>
+      <span class="tit">How the platform protects your personal information</span>
+      <span class="txt">7.1 The Platform takes various precautions to protect your personal information from loss, misappropriation and misuse, as well as unauthorized access, disclosure, alteration or destruction. To ensure the security of your personal information, the Platform has strict information security regulations and procedures, and a dedicated information security team strictly enforces these measures within the company。</span>
+      <span class="txt">7.2 Talk915 has an advanced data security management system with data as the core and around the data life cycle, which improves the security of the whole system from the aspects of organization construction, system design, personnel management and product technology。</span>
+      <span class="txt">7.3 the platform will take reasonable and feasible measures to avoid collecting irrelevant personal information and retain your personal information for the period limited to the purpose stated in the cost policy, unless the retention period needs to be extended or within the period permitted by law. The platform will take reasonable and feasible measures to avoid the collection of irrelevant personal information and retain your personal information for the period limited to the purpose stated in the cost policy, unless the retention period needs to be extended or within the period permitted by law。</span>
+      <span class="txt">7.4 In the event of a personal information security incident, within 30 calendar days the Platform will inform you of the basic circumstances and possible impact of the security incident, the measures taken or to be taken by the Platform, recommendations for your own prevention and reduction of risk, and remedial measures against you, as required by laws and regulations. Event-related information will be sent by the Platform through mail, letters, telephone calls, push notifications and/or other ways to inform you, when it is difficult to inform the subject of personal information one by one, the platform will take a reasonable and effective way to issue announcements. At the same time, the Platform will also be in accordance with regulatory requirements, reporting the disposition of personal information security incidents。</span>
+      <span class="txt">7.5 Due to technical limitations and possible malicious means, in the Internet industry, even if all efforts are made to strengthen security measures, it is not always possible to ensure that information is 100% secure, and we will do our best to ensure the security of the personal information you provide to us. Please be aware of and understand that the systems and communication networks you use to access our services may be at risk of problems due to factors beyond our control. Therefore, we strongly recommend that you take active measures to protect the security of your personal information, including, but not limited to, the use of complex passwords, regular password changes, and the non-disclosure of personal information such as your account password to others. When logging in, Talk915 also insists on using a password to prevent your profile and class records from being accessed without authorization。</span>
+      <span class="txt">When you use the products and / or services of the Talk915 platform, please take good care of your account name and password. We will identify you by your account name and password.	 Once you have disclosed your account name and password, you may lose your information and may have legal consequences against you. If you find that your account name and password have been or will be compromised for any reason, please contact our customer service immediately so that we can take appropriate action. However, we are not responsible for this until we are aware of the situation and take action within a reasonable time。</span>
+      <span class="txt">After an unfortunate personal information security incident occurs, we will inform you of the basic information and possible impact of the security incident, the disposal measures we have taken or will take, the suggestions that you can independently prevent and reduce the risk, and the remedial measures for you according to the requirements of laws and regulations. We will inform you of the relevant information by e-mail, telephone and push notification. When it is difficult to inform the personal information subject one by one, we will release the announcement in a reasonable and effective way. At the same time, we will also timely report the disposal of personal information security incidents in accordance with the requirements of regulatory authorities。</span>
+
+      <span class="tit">8、Data storage location</span>
+      <span class="txt">Personal information collected and generated by us under this service will be stored in the People's Republic of China。</span>
+
+      <span class="tit">9、The scope of application of the Privacy Policy</span>
+      <span class="txt">This Privacy Policy applies to all of our products and/or services except certain products and services. These specific products and services will be subject to certain privacy policies. Specific privacy policies for certain products and services will provide a more specific description of how we use your information in that product and service. The Privacy Policy for this particular product and/or service forms part of this Privacy Policy. If the privacy policy for a particular service is inconsistent with this Privacy Policy, the privacy policy for that particular product and/or service applies。</span>
+      <span class="txt">Please note that this privacy policy only applies to the information we collect, keep, use, share and disclose. Unless otherwise specified in this privacy policy, this privacy policy does not apply to the following situations：</span>
+      <span class="txt">9.1 information collected by third party services (including any third party websites) accessed through our products and / or services；</span>
+      <span class="txt">9.2 information collected through other companies or agencies that provide advertising services in our products and / or services. Please note that if you provide your personal information to a third party when browsing a third party's website or using a third party's products and / or services, your information shall be subject to the third party's privacy statement or similar policies, We are not liable for any improper use or disclosure of the information provided by you by any third party, regardless of whether you log in or browse the above website, software, or use its products and / or services based on the link or guidance of Talk915。</span>
+
+      <span class="tit">10、Change of privacy policy</span>
+      <span class="txt">We may amend the terms of this privacy policy from time to time, which form part of this privacy policy. If the amendment results in a substantial reduction of your rights under this privacy policy, we will publish the changes to this privacy policy by prominently posting on the home page or by other means (including sending you e-mail or notifying you in other ways) that we consider appropriate before the amendment takes effect. In such case, if you continue to use our products and / or services, you agree to be bound by this revised privacy policy。</span>
+
+      <span class="tit">11、How to contact us</span>
+      <span class="txt">We have a dedicated department to protect personal information. If you have any questions, comments or suggestions about this privacy policy, please contact us through the following ways: through the customer service on Talk915 website. Generally, we will reply within 15 days.Updated November 10, 2020。</span>
+      <span class="txt">If you are not satisfied with our response. Especially, if you believe our personal information processing behavior has harmed your legal rights, you can also seek solutions through the Education Commission, the Office of the Cyberspace Administration, Telecommunications Company, and Industrial and Commercial Supervision Department。</span>
+      <span class="txt">Address: 1002 building B, Innovation Tower, NO. 198, Daxin Road, Majialong Community, Nanshan Street, Nanshan District, Shenzhen, China</span>
+      <span class="txt">Contact Number: 400-990-9915</span>
+      <span class="txt">QQ: 2853992879</span>
+      <span class="txt">Email: hr＃@talk915.com</span>
+      <span class="txt">Revision date:November 11, 2020</span>
+      <span class="txt">Updated: November 11, 2020</span>
+
+    </div>
+    <div v-if="showCheck" class="checkbox">
+      <van-checkbox v-model="checked" shape="square" @change="changeCheck">我已阅读并同意《隐私政策》</van-checkbox>
+    </div>
+  </div>
+</template>
+
+<script>
+import {disagreePrivacy} from "@/utils/appMethod";
+
+export default {
+  name: "teaAppPrivacy",
+  data() {
+    return {
+      checked: true,
+      showCheck: null,
+    };
+  },
+  created() {
+    this.showCheck = this.$route.query.showCheck;
+  },
+  methods: {
+    changeCheck(val) {
+      if (!val) {
+        this.$dialog.confirm({
+          message: '若点击确定撤回《隐私政策》的同意，App将无法正常使用哦！',
+          confirmButtonText: '取消撤回',
+          cancelButtonText: '确定撤回',
+        }).then(() => {
+          this.checked = true;
+        }).catch(() => {
+          disagreePrivacy();
+        });
+      }
+    },
+  },
+
+}
+</script>
+
+<style scoped>
+  .protocol {
+    color: #333333;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+
+  .content_box {
+    box-sizing: border-box;
+    padding: 30px 24px 0 24px;
+    font-size: 28px;
+  }
+
+  .txt {
+    color: #606266;
+    font-size: 28px;
+    display: block;
+    line-height: 56px;
+    text-indent: 2em;
+    text-align: left;
+  }
+
+  .head {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .tit {
+    font-size: 28px;
+    display: block;
+    line-height: 56px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-indent: 2em;
+  }
+
+  .fontWeight {
+    font-weight: bold;
+    color: #333333;
+  }
+
+  .head2 {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .txt2 {
+    text-indent: 0;
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    font-size: 28px;
+  }
+</style>

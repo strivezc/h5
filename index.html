@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta http-equiv="Content-Security-Policy" content="script-src * 'self' 'unsafe-inline' 'unsafe-eval'  https://img.yzcdn.cn https://ssl.google-analytics.com  https://assets.zendesk.com https://connect.facebook.net;default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:; connect-src *;  font-src * data: content:;frame-src https://*.qq.com webcompt:;">
+  <title>说客英语</title>
+  <link href="/h5/static/extra/swiper-bundle.min.css" rel="stylesheet">
+  <script type='text/javascript' src="/h5/static/js/dom-to-image.js"></script>
+  <script type='text/javascript' src="/h5/static/js/lucky-cavans@1.7.25.js"></script>
+  <script type="text/javascript" src="/h5/static/js/jweixin-1.6.0.js"></script>
+  <script type='text/javascript' src="/h5/static/js/uni-webview-js@0.0.3.js"></script>
+
+  <script>
+  function initSize() {
+    var clientWidth = document.documentElement.clientWidth;
+    var s_rem = clientWidth > 640 ? 640 / 100 * 4 : clientWidth / 100 * 4;
+    document.getElementsByTagName("html")[0].setAttribute("style", "font-size:" + s_rem + "px");
+  }
+
+  initSize();
+  window.onresize = initSize;
+
+  function param2Obj(url) {
+    const search = decodeURIComponent(url.split('?')[1]).replace(/\+/g, ' ');
+    if (!search) {
+      return {};
+    }
+    const obj = {};
+    const searchArr = search.split('&');
+    searchArr.forEach(v => {
+      const index = v.indexOf('=');
+      if (index !== -1) {
+        const name = v.substring(0, index);
+        const val = v.substring(index + 1, v.length);
+        obj[name] = val;
+      }
+    });
+    return obj;
+  }
+
+  function setCookie(name, value) {
+    let exdate = new Date()
+    exdate.setDate(exdate.getDate() + 365)  //exdate.setDate(exdate.getDate() + 365)
+    document.cookie = name + '=' + value + ';expires=' + exdate.toGMTString()
+    //永久有效
+    //document.cookie = name + '=' + value + ';expires=' + 'Fri, 31 Dec 9999 23:59:59 GMT'
+  }
+
+  function getCookie(cookieName) {
+    var strCookie = document.cookie;
+    var arrCookie = strCookie.split("; ");
+    for (var i = 0; i < arrCookie.length; i++) {
+      var arr = arrCookie[i].split("=");
+      if (cookieName == arr[0]) {
+        return arr[1];
+      }
+    }
+    return "";
+  }
+
+  let urlParams = param2Obj(window.location.href);
+  if (urlParams.token) {
+    setCookie('token', urlParams.token);
+  }
+  // 浏览器内，检测年度学习报告页面是否登录，未登录跳转到h5登录
+  if (window.location.href.indexOf('learnReportCover') > -1 && window.location.href.indexOf('isApp=y') === -1) {
+    if (!getCookie('token')) {
+      let loginUrl = '<%= process.env.H5_LOGIN %>';
+      let urlSplitArr = window.location.href.split('?');
+      if (urlSplitArr.length > 1) {
+        window.location.href = loginUrl + '?' + urlSplitArr[1];
+      } else {
+        window.location.href = loginUrl + '?registerFrom=learnReport';
+      }
+    }
+  }
+
+  </script>
+
+  <script type="text/javascript">
+
+  </script>
+
+  <script>
+  if (window.location.href.indexOf('pingpai')>0) {
+    !function(g,d,t,e,v,n,s){if(g.gdt)return;v=g.gdt=function(){v.tk?v.tk.apply(v,arguments):v.queue.push(arguments)};v.sv='1.0';v.bt=0;v.queue=[];n=d.createElement(t);n.async=!0;n.src=e;s=d.getElementsByTagName(t)[0];s.parentNode.insertBefore(n,s);}(window,document,'script','//qzonestyle.gtimg.cn/qzone/biz/gdt/dmp/user-action/gdtevent.min.js');
+    gdt('init','1200898915');
+    gdt('track','PAGE_VIEW');
+  }
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://a.gdt.qq.com/pixel?user_action_set_id=1200898915&action_type=PAGE_VIEW&noscript=1"/>
+  </noscript>
+
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
